@@ -373,59 +373,60 @@ footer p {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-  .SS , h1 {
-    font-family: "Arvo", serif;
-  }
-html, body {
-  height: 100%;
-  margin: 0; /* Remove default margin */
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-}
-.logo-align {
-  display: flex;
-  justify-content: center; /* Align items to the center horizontally */
-  align-items: center; /* Align items to the center vertically if needed */
-  padding: 25px 0; /* Optional padding around the header */ 
-}
-.figcaption-CSS ,.figcaption-HTML ,.figcaption-JS ,figcaption{
-  font-family: "Arvo", serif;
-}
-  .about-me {
-    background-color: #3333338e; 
-    padding: 1rem;
-    border-radius: 8px;
-    margin: -1rem auto;
-    width: 100%;
-    max-width: 900px;
-    text-align: left;
-    transition: 0.5s;
-    border-left: #0088ff 1px solid;
-    border-top: #0088ff 1px solid;
-  }
-  .about-me p , h4{
-    font-size: 18px;
-    
-  }
-
-  .img-align-skill {
-    margin-left: 10rem;
-    margin-top: -25rem;
-   
-  }
-  .imgBG{
-    opacity: 70%;
-  }
-    footer {
+  html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20rem
-    text-align: center;
-  
+    flex-direction: column; /* Stack children vertically */
   }
-}
+    .about-me {
+      background-color: #3333338e; 
+      padding: 1rem;
+      border-radius: 8px;
+      margin: -1rem auto;
+      width: 100%;
+      max-width: 900px;
+      text-align: left;
+      transition: 0.5s;
+    }
+  
+    .img-align-skill {
+      margin-left: 10rem;
+      margin-top: -25rem;
+     
+    }
+    .imgBG{
+      opacity: 70%;
+    }
+  }
 
+@media (min-width: 1201px) and (max-width: 1440px){
+    html, body {
+      height: 100%;
+      margin: 0; /* Remove default margin */
+      display: flex;
+      flex-direction: column; /* Stack children vertically */
+    }
+      .about-me {
+        background-color: #3333338e; 
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 900px;
+        text-align: left;
+        transition: 0.5s;
+      }
+    
+      .img-align-skill {
+        margin-left: 20rem;
+        margin-top: -25rem;
+       
+      }
+      .imgBG{
+        opacity: 70%;
+      }
+    }
 @media (max-width: 992px) {
   body{
     overflow: scroll;
@@ -748,30 +749,4 @@ html, body {
 }
 
 
-@media (min-width: 1201px) and (max-width: 1440px){
-  html, body {
-    height: 100%;
-    margin: 0; /* Remove default margin */
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-  }
-    .about-me {
-      background-color: #3333338e; 
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem auto;
-      width: 100%;
-      max-width: 900px;
-      text-align: left;
-      transition: 0.5s;
-    }
-  
-    .img-align-skill {
-      margin-left: 20rem;
-      margin-top: -25rem;
-     
-    }
-    .imgBG{
-      opacity: 70%;
-    }
-  }
+

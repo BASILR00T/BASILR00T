@@ -13,6 +13,7 @@ html, body {
   margin: 0; /* Remove default margin */
   display: flex;
   flex-direction: column; /* Stack children vertically */
+  
 }
 
 
@@ -373,6 +374,9 @@ footer p {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
+  body {
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  }
   html, body {
     height: 100%;
     margin: 0; /* Remove default margin */
@@ -397,6 +401,10 @@ footer p {
     }
     .imgBG{
       opacity: 70%;
+    }
+    footer{
+      margin-top: auto; /* Make sure footer stays at the bottom */
+      padding: -2rem; /* Example padding */
     }
   }
 

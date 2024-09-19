@@ -415,12 +415,7 @@ footer p {
     max-height: 25px;
   }
   footer {
-    /* Ensure footer is styled correctly */
-    /* You can add more styles here like padding, colors, etc. */
-    margin-top: auto; /* Make sure footer stays at the bottom */
-    padding: -4rem; /* Example padding */
-    color: #fff; /* Example text color */
-    text-align: center; /* Center text in footer */
+    margin-top: 20rem;
   }
 }
 @media (min-width: 1201px) and (max-width: 1440px){

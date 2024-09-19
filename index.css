@@ -224,6 +224,7 @@ h1 {
   margin: auto auto; /* Center the entire container */
   margin-top: -30rem;
   margin-left: 30%;
+  padding: 10;
   position: relative; /* Set positioning context */
 }
 .img-skill {
@@ -297,6 +298,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
   text-align: center;
+  margin-top: 25rem;
 }
 
 .CC {
@@ -376,7 +378,6 @@ footer p {
 @media (max-width: 1200px) {
   html, body {
     height: 100%;
-    margin: 0; /* Remove default margin */
     display: flex;
     flex-direction: column; /* Stack children vertically */
   }
@@ -387,7 +388,7 @@ footer p {
 
   .about-me {
     background-color: #3333338e; 
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 8px;
     margin: -1rem auto;
     width: 100%;
@@ -418,18 +419,24 @@ footer p {
     margin-top: 20rem;
   }
 }
-@media (min-width: 1201px) and (max-width: 1440px){
+@media (min-width: 1201px) and (max-width: 1600px){
     html, body {
       height: 100%;
       margin: 0; /* Remove default margin */
       display: flex;
       flex-direction: column; /* Stack children vertically */
     }
+    .logo-align {
+      display: flex;
+      justify-content: center; /* Align items to the center horizontally */
+      align-items: center; /* Align items to the center vertically if needed */
+      padding: 10px 0; /* Optional padding around the header */ 
+    }
       .about-me {
         background-color: #3333338e; 
         padding: 1rem;
         border-radius: 8px;
-        margin: 1rem auto;
+        margin: auto auto;
         width: 100%;
         max-width: 900px;
         text-align: left;
@@ -437,12 +444,15 @@ footer p {
       }
     
       .img-align-skill {
-        margin-left: 20rem;
+        margin-left: 25%;
         margin-top: -25rem;
        
       }
       .imgBG{
         opacity: 70%;
+      }
+      footer{
+        margin-top: 20%;
       }
     }
 @media (max-width: 992px) {

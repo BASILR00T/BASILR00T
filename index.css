@@ -182,24 +182,28 @@ h1 {
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   filter: grayscale(90%); /* Default grayscale effect */
-  transition: filter 0.3s ease; /* Smooth transition for filter */
+  transition:  0.5s ; /* Smooth transition for filter */
+  box-shadow:0px 0px 20px #000000;
   margin-left:350px;  
 }
 .logo:hover{
   filter: grayscale(0%);
+  transform: rotate(1deg);
+  box-shadow:0px 0px 20px #ffffff;
 }
 .about-me {
   background-color: #3333338e; 
+  box-shadow:0px 0px 20px #000000;
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto;
   width: 90%;
   max-width: 800px;
   text-align: left;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .about-me:hover{
-  box-shadow:1px 1px #0088ff;
+   box-shadow:0px 0px 20px #0088ff;
 }
 
 .about-me h4 {
@@ -231,12 +235,12 @@ h1 {
   max-height: 120px; /* Maximum height */
   height: auto; /* Maintain aspect ratio */
   filter: grayscale(90%);
-  
-  transition: filter 0.3s ease;
+   transition: 0.5s;
 }
 
 .img-skill:hover {
-  filter: grayscale(0%);
+ filter: grayscale(0%);
+  transform: scale(1.05)
 }
 
 figcaption{

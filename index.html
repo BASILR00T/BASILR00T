@@ -20,25 +20,31 @@
   </head>
   
   <body>
-   <video class="stars" src="./img/Star.mp4" playsinline  autoplay loop muted></video>
+    <video class="stars" src="./img/Star.mp4" playsinline  autoplay loop muted></video>
     <!-- Commented out login section -->
     <!-- <section class="login-section">
       <a id="login" class="login-href" href="./Login.html" target="_blank">Login</a>
       <a class="signup-href" href="./Singup.html" target="_blank">Signup</a>
     </section> -->
 
-    
     <header>
-      <nav class="SS-center">
-        <h1>Welcome To BASIL-Tech Site</h1>
-        <a class="SS" href="https://paypal.me/7bsa?country.x=SA&locale.x=ar_EG" target="_blank">Click here if you want to support me ♥</a>   
+      <h1>BASIL-Tech</h1>
+      <nav>
+         <!-- Support Button -->
+        <div class="support-button">
+          <a href="#social">Get in Touch</a>
+          <a href="#projects" >Projects</a>
+          <a href="https://www.paypal.com/paypalme/7bsa?country.x=SA&locale.x=ar_EG" target="_blank" rel="noopener noreferrer">Support Me on PayPal</a>
+        </div>
       </nav>
+      <hr>
+  
+    
+      <p>Welcome to my portfolio, which displays my abilities in web creation !</p>      
     </header>
-
     <figure class="logo-align">
       <img class="logo" src="./img/LOGO.png" alt="BASIL-Tech Logo" loading="lazy">
     </figure>
-
     <!-- About Me Section -->
     <section id="about-me" class="about-me">
       <h4>About me:</h4>
@@ -46,36 +52,62 @@
     </section>
 
     <!-- Skills Section -->
-    <figure class="img-align-skill">
-      <figcaption class="figcaption">My Skills</figcaption>
-      <img class="img-skill" src="./img/Html.png" alt="HTML icon" title="HTML" loading="lazy">
-      <figcaption class="figcaption-HTML">HTML</figcaption>
-      <img class="img-skill" src="./img/Css.png" alt="CSS icon" title="CSS" loading="lazy">
-      <figcaption class="figcaption-CSS">CSS</figcaption>
-      <img class="img-skill" src="./img/JS.png" alt="JavaScript icon" title="JavaScript" loading="lazy">
-      <figcaption class="figcaption-JS">JavaScript</figcaption>
-    </figure>
-   
+         <!-- Skills Section -->
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Basic understanding of HTML & CSS</li>
+        <li>Learning the fundamentals of JavaScript</li>
+        <li>Familiar with creating responsive layouts using CSS Grid & Flexbox</li>
+        <!-- <li>Front-end Frameworks (Bootstrap, Tailwind)</li> -->
+        <!-- <li>Version Control (Git & GitHub)</li> -->
+    </ul>    
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <a id="projects"></a>
+      <h2>Projects</h2>
+      <div class="project">
+        <a href="./Game/rock.html" target="_blank" rel="noopener noreferrer">
+          <p>Simple Rock Paper Scissors Game wiht HTML,CSS and JavaScript.</p>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="./Story/Short_Story.html" target="_blank" rel="noopener noreferrer">
+          <p>Simple Random Story Picker. Using HTML,CSS and JavaScript.</p>
+        </a>
+          
+      </div>
+    </section>
+
+
+  
     <!-- Footer Section -->
     <footer>
+      <a id="social"></a>
       <div class="CC">
-          <a href="https://www.instagram.com/_7wsz/" target="_blank">
+        <h4>Connect with me on ↴</h4>
+          <a href="https://www.instagram.com/_7wsz/" target="_blank" rel="noopener noreferrer">
             <img class="img" src="./img/instagram_2111463.png" alt="Instagram logo" loading="lazy">
           </a>
-          <a href="https://x.com/BinSami_IT" target="_blank">
+          <a href="https://x.com/iimBSA" target="_blank" rel="noopener noreferrer">
             <img class="img" src="./img/x.png" alt="Twitter X logo" loading="lazy">
           </a> 
-          <a href="https://discord.gg/wf5P7dXBGr" target="_blank">
-            <img class="img" src="./img/discord.png" alt="Discord logo" loading="lazy">
+          <a href="https://discord.gg/wf5P7dXBGr" target="_blank" rel="noopener noreferrer">
+            <img class="img" src="./img/discord.png"  alt="Discord logo" loading="lazy">
           </a>
-          <a href="mailto:bassel71757@gmail.com">
+          <a href="mailto:bassel71757@gmail.com" target="_blank" rel="noopener noreferrer">
             <img class="img" src="./img/Mail.png" alt="Email icon" loading="lazy">
           </a>
-          <p>© copyright BASIL-Tech Site 2024</p>
+          <p>&copy;2024 BASIL-Tech. All rights reserved |
+            Dev By BASIL Tech
+          </p>
       </div>
     </footer>
 
     <!-- External JS File -->
-    <script src='signup-login.js'></script>
+    <!-- <script src='signup-login.js'></script> -->
   </body>
 </html>

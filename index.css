@@ -5,31 +5,41 @@
   margin: 0;
   text-decoration: none;
 }
-body {
-  background-color: #161616;
-}
 
 html, body {
   height: 100%;
   margin: 0; /* Remove default margin */
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #121212;
+  color: whitesmoke;
+  text-align: center;
+}
 
+/* Typography */
+h1 {
+  font-family: 'Arvo', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #0088ff;
+}
+/* Section Styling */
+section {
+  padding: 40px 0;
+  border-bottom: 1px solid whitesmoke;
+}
 
 body::-webkit-scrollbar {
   scrollbar-color: auto;
   width: 1em;
-}
- 
-body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
- 
+} 
 body::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  background-color: whitesmoke;
 }
 
 .stars {
@@ -42,48 +52,62 @@ body::-webkit-scrollbar-thumb {
 /*--------------*/
 /* Header */
 header {
-  padding: 0.1em;
-  position: relative;
-  text-align: center;
+  padding: 50px 0;
 }
-/* Default Styles (for Desktop) */
-.SS {
-  padding: 0 0.23rem;
-  margin: 0 -0.23rem;
-  transition: color 0.3s ease, box-shadow 0.3s ease;
-  color: #0088ff;
-  font-family: cursive;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-decoration: none;
+header h1{
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: -4rem;
+  padding: 20px;
 }
 
-.SS:hover {
-  color: #ffffff;
-  border-bottom: 1px solid #0088ff;
-  border-radius: 3px;
-}
-
-.SS-center {
-  text-align: center;
-}
-
-/* Welcoming Text */
-h1 {
-  color: rgb(255, 255, 255);
+header p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1.2rem;
   padding: 5px;
-  font-size: 35px;
-  text-align: center;
-  font-family: cursive;
 }
+hr{
+  margin-left:30rem ;
+  width: 50%;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  /* border-bottom: 1px solid whitesmoke; */
+  margin-top:-3rem ;
+  padding: 15px;
+  border-radius: 5px;
+  max-height: 70%;
+}
+
+/* Support Button */
+.support-button a {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+  box-shadow: 0px 2px 6px #0088ff;
+}
+
+.support-button a:hover {
+  background-color: #0088ff;
+  box-shadow: 0px 2px 6px #ffffff;
+  transform: translateY(-3px);
+}
+
 /* Logo Alignment */
 
 .logo-align {
   display: flex;
   justify-content: center; /* Align items to the center horizontally */
   align-items: center; /* Align items to the center vertically if needed */
-  padding: 20px 0; /* Optional padding around the header */ 
+  margin-top: -2rem;
+  margin-left: 40rem;
 }
 .logo {
   max-width: 300px; /* Maximum width of the logo */
@@ -93,8 +117,8 @@ h1 {
   filter: grayscale(90%); /* Default grayscale effect */
   transition:  0.5s ; /* Smooth transition for filter */
   box-shadow:0 0 30px #0088ff;
-  margin-left:350px;  
 }
+
 .logo:hover{
   filter: grayscale(0%);
   transform: rotate(1deg);
@@ -104,9 +128,11 @@ h1 {
   background-color: #1d1d1d38; 
   padding: 2rem;
   border-radius: 8px;
-  margin: 2rem auto;
-  width: 90%;
+  margin-top: -17rem;
+  margin-left:32rem ;
+  width: 30%;
   max-width: 800px;
+  border: none !important; 
   box-shadow:0px 0px 20px #ffffff;
   text-align: left;
   transition: 0.8s;
@@ -115,7 +141,6 @@ h1 {
   box-shadow:0px 0px 20px #0088ff;
   
 }
-
 
 .about-me h4 {
   color: whitesmoke;
@@ -131,90 +156,81 @@ h1 {
   line-height: 1.8;
 }
 
-/* Skill Image */
-.img-align-skill {
-  display: flex;
-  justify-content: center; /* Align items to the center horizontally */
-  align-items: flex-end; /* Align items to the bottom vertically (or center as needed) */
-  margin: auto auto; /* Center the entire container */
-  margin-top: -30rem;
-  margin-left: 30%;
-  padding: 10;
-  position: relative; /* Set positioning context */
+
+/* Skills Section */
+
+.skills{
+  margin-top: 2rem;
 }
-.img-skill {
-  max-height: 120px; /* Maximum height */
-  height: auto; /* Maintain aspect ratio */
-  filter: grayscale(90%);
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.skills li {
+  background-color: #1d1d1d38;
+  box-shadow:0px 0px 10px #ffffff;
+  color: whitesmoke;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
   transition: 0.5s;
 }
 
-.img-skill:hover {
-  filter: grayscale(0%);
-  transform: scale(1.05)
+.skills li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 2px 6px #0088ff;
 }
 
-figcaption{
-  color: whitesmoke;
-  position: absolute;
-  font-size: 30px;
-  top:-35%;
-  left: 32%;
-  opacity: 80%;
-  font-family: cursive;
+/* Projects Section */
+.projects {
+  max-width: 800px;
+  margin:  auto;
 }
-.figcaption-HTML {
-  position: absolute;
+.project a{
+  text-decoration: none;
   color: whitesmoke;
-  font-family: cursive;
-  font-size: 25px;
-  top:97%;
-  left:10%;
-  opacity:0%;
-  transition: 0.5s;
 }
-.figcaption-CSS {
-  position: absolute;
+.project {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #1d1d1d38;
+  box-shadow:0px 0px 10px #ffffff;
   color: whitesmoke;
-  font-family: cursive;
-  font-size: 25px;
-  top:97%;
-  left:45%;
-  opacity: 0%;
   transition: 0.5s;
 }
 
-.figcaption-JS {
-  
-  position: absolute;
-  color: whitesmoke;
-  font-family: cursive;
-  font-size: 23px;
-  top:97%;
-  left:75%;
-  opacity: 0%;
-  transition: 0.5s;
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 2px 6px #0088ff;
 }
-.figcaption-HTML:hover{
-  color: red;
-  opacity: 80%;
+
+.project img {
+  max-width: 100%;
+  border-radius: 10px;
 }
-.figcaption-CSS:hover{
-  color: #0088ff;
-  opacity: 80%;
+
+.project p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  line-height: 1.6;
 }
-.figcaption-JS:hover{
-  color: yellow;
-  opacity: 80%;
-}
+
 /* Footer */
 footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   text-align: center;
-  margin-top: 25rem;
+  margin-top: 1rem;
 }
+
 
 .CC {
   font-family: 'Roboto Condensed', sans-serif;
@@ -238,55 +254,8 @@ footer {
   transform: scale(1.1);
 }
 footer p {
-  margin-top: 0rem;
   font-size: 1rem;
   color: #cccccc93;
-}
-
-
-
-/*SINGup and login buttom*/
-.login-section{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 5px;
-  margin: 0;
-  padding: 0;
-}
-.login-href{
-  padding:1px ;
-  margin: 0;
-  position: relative;
-  color: #ffffff;
-  font-family: cursive;
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 1.3;
-  text-decoration: none;
-  background-color: #141414;
-  border-radius: 3px;
-  transition: 0.5s;
-}
-.login-href:hover ,
- .signup-href:hover{
-  color: green;
-}
-
-
-.signup-href{
-  padding:1px ;
-  margin: 0;
-  position: relative;
-  color: #ffffff;
-  font-family: cursive;
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 1.3;
-  text-decoration: none;
-  background-color: #141414;
-  border-radius: 3px;
-  transition: 0.5s;
 }
 
 /*---------------------------*/
@@ -295,395 +264,323 @@ footer p {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-  html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
+  .logo-align {
+    margin-top: -2rem;
+    margin-left: 35rem;
   }
-
-  body {
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
-  }
-
   .about-me {
-    background-color: #3333338e; 
-    padding: 2rem;
-    border-radius: 8px;
-    margin: -1rem auto;
-    width: 100%;
-    max-width: 900px;
-    text-align: left;
-    transition: 0.5s;
+    margin-top: -18rem;
+    margin-left:5rem ;
+    width: 50%;
+    max-width: 800px;
   }
 
-  /* If you have a main content class, set this to allow it to grow and fill space */
-  .main-content {
-    flex-grow: 1; /* Makes the main content flexible to grow */
-  }
-
-  .img-align-skill {
-    margin-left: 10rem;
-    margin-top: -25rem;
-  }
-
-  .imgBG {
-    opacity: 70%;
-  }
-  .img {
-    border-radius: 7px;
-    border: 2px solid #73AD21;
-    max-height: 25px;
-  }
-  footer {
-    margin-top: 20rem;
+  hr{
+    margin:auto ;
+    width: auto;
   }
 }
 @media (min-width: 1201px) and (max-width: 1600px){
-    html, body {
-      height: 100%;
-      margin: 0; /* Remove default margin */
-      display: flex;
-      flex-direction: column; /* Stack children vertically */
-    }
-    .logo-align {
-      display: flex;
-      justify-content: center; /* Align items to the center horizontally */
-      align-items: center; /* Align items to the center vertically if needed */
-      padding: 10px 0; /* Optional padding around the header */ 
-    }
-      .about-me {
-        padding: 1rem;
-        border-radius: 8px;
-        margin: auto auto;
-        width: 100%;
-        max-width: 900px;
-        text-align: left;
-        transition: 0.5s;
-      }
-    
-      .img-align-skill {
-        margin-left: 25%;
-        margin-top: -25rem;
-       
-      }
-      .imgBG{
-        opacity: 70%;
-      }
-      footer{
-        margin-top: 20%;
-      }
-    }
-@media (max-width: 992px) {
-  body{
-    overflow: scroll;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    text-align: center;
-  
-  }
-  .header {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-  
-  .logo {
-    max-width: 40%;       /* Ensure logo doesn't exceed viewport on smaller devices */
-    margin-left: 0;       /* Center the logo by removing left margin */
-  }
-  h1 {
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .SS {
-    font-size: 1.1rem !important;
-    font-family: 'Courier New', Courier, monospace;
-    color: #0088ff;
-    text-decoration: none;
-    background: #1d1d1d;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+  .logo-align {
+    margin-top: -2rem;
+    margin-left: 35rem;
   }
   .about-me {
-    background-color: #3333338e; 
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 0rem auto;
-    width: 90%;
+    margin-top: -18rem;
+    margin-left:15rem ;
+    width: 40%;
     max-width: 800px;
-    text-align: left;
-    transition: 0.5s;
   }
-  .img-align-skill {
-    display: flex;
-    justify-content: center; /* Align items to the center horizontally */
-    align-items: flex-end; /* Align items to the bottom vertically (or center as needed) */
-    margin: auto auto; /* Center the entire container */
-    margin-top: 4rem;
-    margin-left: auto;
-    position: relative; /* Set positioning context */
-  }
-  .img-skill {
-    max-height: 120px; /* Maximum height */
-    height: auto; /* Maintain aspect ratio */
-    filter: grayscale(90%);
-    transition: filter 0.3s ease;
-  }
-  figcaption{
-    color: whitesmoke;
-    position: absolute;
-    font-size: 25px;
-    top:-40%;
-    left: 32%;
-    opacity: 80%;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .figcaption-HTML {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:10%;
-    opacity:0%;
-    transition: 0.5s;
-  }
-  .figcaption-CSS {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:44%;
-    opacity: 0%;
-    transition: 0.5s;
-  }
-  
-  .figcaption-JS {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:75%;
-    opacity: 0%;
-    transition: 0.5s;
-  }
-  .imgBG{
-    opacity: 70%;
+
+  hr{
+    margin:auto ;
+    width: 50%;
   }
 }
 
-@media (max-width: 768px) {
-  body{
-    overflow: scroll;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    text-align: center;
-  
-  }
-  .header {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-  
-  .logo {
-    max-width: 40%;       /* Ensure logo doesn't exceed viewport on smaller devices */
-    margin-left: 0;       /* Center the logo by removing left margin */
-  }
+
+@media (max-width: 992px) {
   h1 {
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
   }
-  .SS {
-    font-size: 1.1rem !important;
+
+  .stars {
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    opacity: 30%;
+    z-index: -1;
+  }
+  /*--------------*/
+  /* Header */
+  
+  header h1{
     font-family: 'Courier New', Courier, monospace;
-    color: #0088ff;
-    text-decoration: none;
-    background: #1d1d1d;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    margin-top: -4rem;
+    padding: 25px;
+  }
+  
+  header p{
+    font-size: 17px;
+  
+  }
+  hr{
+    margin:auto !important;
+    width:auto !important;
+  }
+  
+  /* Support Button */
+  .support-button a {
+    font-size: 1rem;
+  }
+  
+  /* Logo Alignment */
+  
+  .logo-align {
+    margin: -2rem 1rem auto 1rem;
+  }
+  .logo {
+    max-width: 280px; /* Maximum width of the logo */
+  }
+  .logo:hover{
+    filter: grayscale(0%);
+    transform: rotate(1deg);
+    box-shadow:0px 0px 25px #ffffff;
+  }
+
+  /* Skills Section */
+  
+  .skills{
+    margin-top: -1rem;
+  }
+  
+  .skills ul {
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .skills li {
+    margin: 1rem 1rem auto 1rem;
+    font-size: 1.2rem;
+  }                                                                                                                                                                       
+  
+  /* Projects Section */
+
+  .project {
+    padding: 20px;
+    margin: 20px 1rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    background-color: #1d1d1d38;
+    box-shadow:0px 0px 10px #ffffff;
+    color: whitesmoke;
+    transition: 0.5s;
   }
   .about-me {
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 0rem auto;
-    width: 90%;
+    margin: 1rem 5rem auto auto;
+    width:80%;
     max-width: 800px;
-    text-align: left;
-    transition: 0.5s;
   }
-  .img-align-skill {
-    display: flex;
-    justify-content: center; /* Align items to the center horizontally */
-    align-items: flex-end; /* Align items to the bottom vertically (or center as needed) */
-    margin: auto auto; /* Center the entire container */
-    margin-top: 4rem;
-    margin-left: auto;
-    position: relative; /* Set positioning context */
+
+  
+.about-me h4 {
+  font-size: 1.7rem;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+}
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
-  .img-skill {
-    max-height: 120px; /* Maximum height */
-    height: auto; /* Maintain aspect ratio */
-    filter: grayscale(90%);
-    transition: filter 0.3s ease;
+
+  .stars {
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    opacity: 30%;
+    z-index: -1;
   }
-  figcaption{
-    color: whitesmoke;
-    position: absolute;
-    font-size: 25px;
-    top:-40%;
-    left: 32%;
-    opacity: 80%;
+  /*--------------*/
+  /* Header */
+  
+  header h1{
     font-family: 'Courier New', Courier, monospace;
-  }
-  .figcaption-HTML {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:10%;
-    opacity:0%;
-    transition: 0.5s;
-  }
-  .figcaption-CSS {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:44%;
-    opacity: 0%;
-    transition: 0.5s;
+    margin-top: -4rem;
+    padding: 25px;
   }
   
-  .figcaption-JS {
-    position: absolute;
+  header p{
+    font-size: 17px;
+  
+  }
+  hr{
+    margin:auto !important;
+    width:auto !important;
+  }
+  
+  /* Support Button */
+  .support-button a {
+    font-size: 1rem;
+  }
+  
+  /* Logo Alignment */
+  
+  .logo-align {
+    margin: -2rem 1rem auto 1rem;
+  }
+  .logo {
+    max-width: 280px; /* Maximum width of the logo */
+  }
+  .logo:hover{
+    filter: grayscale(0%);
+    transform: rotate(1deg);
+    box-shadow:0px 0px 25px #ffffff;
+  }
+
+  /* Skills Section */
+  
+  .skills{
+    margin-top: -1rem;
+  }
+  
+  .skills ul {
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .skills li {
+    margin: 1rem 1rem auto 1rem;
+    font-size: 1.2rem;
+  }                                                                                                                                                                       
+  
+  /* Projects Section */
+
+  .project {
+    padding: 20px;
+    margin: 20px 1rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    background-color: #1d1d1d38;
+    box-shadow:0px 0px 10px #ffffff;
     color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    top:97%;
-    left:75%;
-    opacity: 0%;
     transition: 0.5s;
   }
-  .imgBG{
-    opacity: 70%;
+  .about-me {
+    margin: 1rem 5rem auto auto;
+    width:80%;
+    max-width: 800px;
   }
+
+  
+.about-me h4 {
+  font-size: 1.7rem;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+}
 }
 
 
 @media (max-width: 480px) {
-  body{
-    overflow: scroll;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    text-align: center;
-  
-  }
   h1 {
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .SS {
-    font-size: 1.1rem !important;
-    font-family: 'Courier New', Courier, monospace;
-    color: #0088ff;
-    text-decoration: none;
-    background: #1d1d1d;
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .logo {
-    max-width: 70%;      /* Further reduce max-width on small screens */
-    margin-left: 0;      /* Center the logo */
-    margin-bottom: 10px; /* Optional margin for spacing */
-  }
-  
-  .about-me {
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 0rem auto;
-    width: 90%;
-    max-width: 800px;
-    text-align: left;
-    transition: 0.5s;
-}
-  .img-align-skill {
-    display: flex;
-    justify-content: center; /* Align items to the center horizontally */
-    align-items: flex-end; /* Align items to the bottom vertically (or center as needed) */
-    margin: auto auto; /* Center the entire container */
-    margin-top: 3rem;
-    margin-left: auto;
-    position: relative; /* Set positioning context */
-  }
-  .img-skill {
-    max-height: 90px; /* Maximum height */
-    height: auto; /* Maintain aspect ratio */
-    filter: grayscale(90%);
-    transition: filter 0.3s ease;
-  }
-  figcaption{
-    color: whitesmoke;
-    position: absolute;
-    font-size: 25px;
-    top:-40%;
-    left: 32%;
-    opacity: 80%;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .figcaption-HTML {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    top:97%;
-    left:10%;
-    opacity:0%;
-    transition: 0.5s;
-  }
-  .figcaption-CSS {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    top:97%;
-    left:45%;
-    opacity: 0%;
-    transition: 0.5s;
-  }
-  
-  .figcaption-JS {
-    position: absolute;
-    color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    top:97%;
-    left:80%;
-    opacity: 0%;
-    transition: 0.5s;
-  }
-  .imgBG{
-    opacity: 70%;
+    font-size: 2rem;
   }
 
+  .stars {
+    position: fixed;
+    background-size: cover;
+    min-width: 100%;
+    opacity: 30%;
+    z-index: -1;
+  }
+  /*--------------*/
+  /* Header */
+  
+  header h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -4rem;
+    padding: 25px;
+  }
+  
+  header p{
+    font-size: 17px;
+  
+  }
+  hr{
+    margin:auto !important;
+    width:auto !important;
+  }
+  
+  /* Support Button */
+  .support-button a {
+    font-size: 0.8rem;
+  }
+  
+  /* Logo Alignment */
+  
+  .logo-align {
+    margin: -2rem 1rem auto 1rem;
+  }
+  .logo {
+    max-width: 280px; /* Maximum width of the logo */
+  }
+  .logo:hover{
+    filter: grayscale(0%);
+    transform: rotate(1deg);
+    box-shadow:0px 0px 25px #ffffff;
+  }
+
+  /* Skills Section */
+  
+  .skills{
+    margin-top: -1rem;
+  }
+  
+  .skills ul {
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .skills li {
+    margin: 1rem 1rem auto 1rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Projects Section */
+
+  .project {
+    padding: 20px;
+    margin: 20px 1rem;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    background-color: #1d1d1d38;
+    box-shadow:0px 0px 10px #ffffff;
+    color: whitesmoke;
+    transition: 0.5s;
+  }
+  .about-me {
+    margin: 1rem 2rem auto auto;
+    width:80%;
+    max-width: 800px;
+  }
+
+  
+.about-me h4 {
+  font-size: 1.7rem;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+}
 }
 
 

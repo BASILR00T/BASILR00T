@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes element dimensions easier to manage */
+}
+
+html, body {
+    height: 100%; /* Ensures body takes up full viewport height */
+}
+
+body {
+    background-color: #181C14; 
+    font-family: 'Arial', sans-serif; /* Consider using a web font for better aesthetics */
+    display: flex;
+    flex-direction: column; /* Stacking children vertically */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E8B57;
+    border-bottom: 3px solid gold; /* Changed to the shorthand version */
+}
+
+h1 {
+    color: white;
+    text-shadow: 0 0 25px gold;
+}
+
+/* Subheader Styles */
+h2 {
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 2rem auto;
+    width: 30%;
+    box-shadow: 0 0 15px #2E8B57;
+}
+
+/* Main Section Styles */
+main {
+    flex: 1; /* Takes up remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.storyFiled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 65%;
+    align-items: flex-start; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    color: whitesmoke;
+    line-height: 1.8;
+    box-shadow: 0 0 25px gold;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.8s;
+     
+}
+
+.storyFiled:hover{
+    transform: scale(1.01);
+}
+
+
+
+/* Paragraph Styles */
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Button Field Styles */
+.btnfiled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0; /* Adds vertical margin between buttons */
+}
+
+/* Button Styles */
+button {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px;
+   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Improved transition for better feel */
+    transition: 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Hover Styles */
+button:hover {
+    color: whitesmoke;
+    background-color: #2E8B57;
+    box-shadow: 0 0 25px gold;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    color: white;
+    padding: 5px 0; /* Optional padding for aesthetic spacing */
+    background-color: #2E8B57;
+    border-top: 3px solid gold;
+    transition: background-color 0.5s; /* Added transition for hover effects */
+}
+
+footer p{
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* Anchor Link Styles */
+a {
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Social Image Styles */
+.img {
+    border-radius: 10px;
+    border: 2px solid #73AD21;
+    background-color: #181C14;
+    max-height: 30px;
+    filter: grayscale(100%);
+    transition: filter 0.5s, transform 0.5s; /* Improved transition */
+}
+
+.img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+        width: 70%;
+    }
+    .storyFiled {
+        width: 90%;
+        max-height: 85%;
+        height: auto;
+        align-items: flex-start;  
+    }
+    button:hover {
+        transform: scale(1.05); /* Slightly smaller scale for mobile */
+    }
+}

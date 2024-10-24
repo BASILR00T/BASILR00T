@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./rock.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <h2>Rock Paper Scissors</h2>
+
+    <h4 id="Result" class="result">Click The images to play</h4>
+
+    <section id="RESULT-anmation" class="resultParant">
+      <p id="totalwin" class="result-totalwin"><strong>Wins:</strong> 0</p> 
+      <p id="totalLose" class="result-totalLose"><strong>Losses:</strong> 0</p>
+      <p id="totalTie" class="result-totalTie"><strong>Ties:</strong> 0</p>
+    </section>
+
+    <button id="resetButton" class="RestGame">Reset the game</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+
+    <section class="gameParnt">
+      <button id="GAME1" class="rockbtn" data-choice="rock">
+        <img src="./Rock.png" alt="Rock"> 
+      </button>
+      <button id="GAME2" class="paperbtn" data-choice="paper">
+        <img src="./paper.png" alt="Paper">
+      </button>
+      <button id="GAME3" class="scissorsbtn" data-choice="scissors">
+        <img src="./scissors.png" alt="Scissors">
+      </button>
+    </section>
+
+    <footer>
+      <div class="CC">
+          <a href="https://www.instagram.com/_7wsz/" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="./img/instagram_2111463.png" alt="Instagram logo" loading="lazy">
+          </a>
+          <a href="https://x.com/iimBSA" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="./img/x.png" alt="Twitter X logo" loading="lazy">
+          </a> 
+          <a href="https://discord.gg/wf5P7dXBGr" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="./img/discord.png" alt="Discord logo" loading="lazy">
+          </a>
+          <a href="mailto:bassel71757@gmail.com" rel="noopener noreferrer">
+              <img class="img" src="./img/Mail.png" alt="Email icon" loading="lazy">
+          </a>
+      </div>
+      <p>&copy; 2024 Rock Paper Scissors. All rights reserved.</p>
+      <p>Dev By BASIL Tech</p>
+  </footer>
+
+    <script src="rock.js"></script>
+</body>
+</html>

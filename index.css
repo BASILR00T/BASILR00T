@@ -100,6 +100,25 @@ nav{
   transform: translateY(-3px);
 }
 
+.Up-button{
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+  box-shadow: 0px 2px 6px #0088ff;
+}
+.Up-button:hover {
+  background-color: #0088ff;
+  box-shadow: 0px 2px 6px #ffffff;
+  transform: translateY(-3px);
+}
+
+
+
 /* Logo Alignment */
 
 .logo-align {
@@ -229,6 +248,10 @@ footer {
   align-items: flex-end;
   text-align: center;
   margin-top: 1rem;
+}
+
+footer h4{
+  padding-top: 5px;
 }
 
 

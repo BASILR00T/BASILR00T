@@ -142,7 +142,7 @@ nav{
   box-shadow:0px 0px 25px #ffffff;
 }
 .about-me {
-  background-color: #1d1d1d38; 
+  background-color: #0b1116c7; 
   padding: 2rem;
   border-radius: 8px;
   margin-top: -17rem;
@@ -191,7 +191,7 @@ nav{
 }
 
 .skills li {
-  background-color: #1d1d1d38;
+  background-color: #0b1116c7;
   box-shadow:0px 0px 10px #ffffff;
   color: whitesmoke;
   margin: 20px 0;
@@ -233,7 +233,7 @@ nav{
 }
 
 .Projects li {
-  background-color: #1d1d1d38;
+  background-color: #0b1116c7;
   box-shadow:0px 0px 10px #ffffff;
   color: whitesmoke;
   margin: 20px 0;

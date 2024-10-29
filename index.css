@@ -30,8 +30,8 @@ h1 {
 }
 /* Section Styling */
 section {
-  padding: 60px 0;
-  border-bottom: 1px solid whitesmoke;
+  padding: 3rem 0;
+  /* border-bottom: 1px solid whitesmoke; */
 }
 
 body::-webkit-scrollbar {
@@ -63,8 +63,8 @@ header h1{
 header p{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 5px;
+  font-size: 1.5rem;
+  padding-top: 15px;
 }
 hr{
   margin-left:30rem ;
@@ -116,8 +116,6 @@ nav{
   box-shadow: 0px 2px 6px #ffffff;
   transform: translateY(-3px);
 }
-
-
 
 /* Logo Alignment */
 
@@ -187,7 +185,6 @@ nav{
 
 .skills ul {
   list-style: none;
-  padding: 0;
   max-width: 800px;
   margin: auto auto;
   font-family: 'Courier New', Courier, monospace;
@@ -197,7 +194,7 @@ nav{
   background-color: #1d1d1d38;
   box-shadow:0px 0px 10px #ffffff;
   color: whitesmoke;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 15px;
   border-radius: 5px;
   font-size: 1.5rem;
@@ -213,6 +210,7 @@ nav{
 
 .Projects{
  margin: auto;
+ border-bottom: 1px solid whitesmoke ;
 }
 
 
@@ -238,7 +236,7 @@ nav{
   background-color: #1d1d1d38;
   box-shadow:0px 0px 10px #ffffff;
   color: whitesmoke;
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 15px;
   border-radius: 5px;
   font-size: 1.5rem;
@@ -295,6 +293,9 @@ footer p {
 /* Media Queries */
 
 /* Media Queries for Responsiveness */
+
+
+
 @media (max-width: 1200px) {
   .logo-align {
     margin-top: -2rem;
@@ -398,17 +399,6 @@ footer p {
   
   /* Projects Section */
 
-  .project {
-    padding: 20px;
-    margin: 20px 1rem;
-    border-radius: 10px;
-    max-width: 800px;
-    width: 90%;
-    background-color: #1d1d1d38;
-    box-shadow:0px 0px 10px #ffffff;
-    color: whitesmoke;
-    transition: 0.5s;
-  }
   .about-me {
     margin: 1rem 5rem auto auto;
     width:80%;
@@ -491,19 +481,22 @@ footer p {
     font-size: 1.2rem;
   }                                                                                                                                                                       
   
-  /* Projects Section */
-
-  .project {
-    padding: 20px;
-    margin: 20px 1rem;
-    border-radius: 10px;
+  /* Projects Section */  
+  .Projects{
+    margin-top: -1rem;
+  }
+  
+  .Projects ul {
     max-width: 800px;
     width: 90%;
-    background-color: #1d1d1d38;
-    box-shadow:0px 0px 10px #ffffff;
-    color: whitesmoke;
-    transition: 0.5s;
   }
+  
+  .Projects li {
+    margin: 1rem 1rem auto 1rem;
+    font-size: 1.2rem;
+  }  
+  /*----*/
+
   .about-me {
     margin: 1rem 5rem auto auto;
     width:80%;
@@ -587,33 +580,100 @@ footer p {
   }
   
   /* Projects Section */
-
-  .project {
-    padding: 20px;
-    margin: 20px 1rem;
-    border-radius: 10px;
+  .Projects{
+    margin-top: -1rem;
+  }
+  
+  .Projects ul {
     max-width: 800px;
     width: 90%;
-    background-color: #1d1d1d38;
-    box-shadow:0px 0px 10px #ffffff;
-    color: whitesmoke;
-    transition: 0.5s;
+  }
+  
+  .Projects li {
+    margin: 1rem 1rem auto 1rem;
+    font-size: 1.2rem;
   }
   .about-me {
     margin: 1rem 2rem auto auto;
     width:80%;
     max-width: 800px;
   }
-
-  
-.about-me h4 {
+  .about-me h4 {
   font-size: 1.7rem;
-}
+  }
 
-.about-me p {
+  .about-me p {
   font-size: 1.1rem;
+  }
 }
+
+
+@media screen and (min-width: 2560px) and (max-width: 3840px) {
+  /* Typography adjustments */
+  h1 {
+    font-size: 4rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    padding: 25px;
+  }
+
+  header p {
+    font-size: 2rem;
+  }
+
+  .support-button a,
+  .Up-button {
+    font-size: 1.5rem;
+    padding: 15px 20px;
+  }
+
+  /* Logo and Layout */
+  .logo-align {
+    margin-top: -2rem;
+    margin-left: 60rem;
+  }
+
+  .logo {
+    max-width: 400px;
+  }
+
+  .about-me {
+    margin-top: -23.5rem;
+    margin-left: 33rem;
+    width: 50%;
+    max-width: 1000px;
+    padding: 3rem;
+  }
+
+  .about-me h4 {
+    font-size: 3rem;
+  }
+
+  .about-me p {
+    font-size: 1.8rem;
+  }
+
+  /* Skills and Projects sections */
+  .skills h2,
+  .Projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .skills li,
+  .Projects li {
+    font-size: 1.8rem;
+    padding: 20px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 1.3rem;
+  }
+
+  hr {
+    margin: auto;
+    width: 60%;
+  }
 }
-
-
-

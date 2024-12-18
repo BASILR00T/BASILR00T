@@ -117,10 +117,11 @@ body{
     margin-right: auto;
     width: 900px;
     text-align: center;
-    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0b1116;
     margin-top: 1rem;
     border-radius: 5px;
-    font-family: cursive;
+   
     z-index: 2;
     padding: 5px;
     background-color:#0088ff ;
@@ -135,7 +136,7 @@ body{
     color: aliceblue;
     margin-top: 5rem;
     border-radius: 5px;
-    font-family: cursive;
+  font-family: 'Courier New', Courier, monospace;
     z-index: 2;
     padding: 5px;
     background-color:#0088ff ;
@@ -225,7 +226,7 @@ footer a{
             color: aliceblue;
             margin-top: 1rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -238,7 +239,7 @@ footer a{
             color: aliceblue;
             margin-top: 2rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -290,7 +291,7 @@ footer a{
             color: aliceblue;
             margin-top: 1rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -303,7 +304,7 @@ footer a{
             color: aliceblue;
             margin-top: 2rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -340,7 +341,7 @@ footer a{
             color: aliceblue;
             margin-top: 1rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -353,7 +354,7 @@ footer a{
             color: aliceblue;
             margin-top: 2rem;
             border-radius: 5px;
-            font-family: cursive;
+          font-family: 'Courier New', Courier, monospace;
             z-index: 2;
             font-size: 1.3rem;
             padding: 5px;
@@ -389,8 +390,3 @@ footer a{
       @media screen and (min-width: 2560px) and (max-width: 3840px) {
     
       }
-      
-    
-      
-
-

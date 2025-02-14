@@ -366,11 +366,38 @@
 /* Large Screens (up to 1800px) */
 @media screen and (max-width: 1800px) {
   .project-grid {
-    width: 90%;
+    width: 100%;
     padding: 2rem;
   }
 }
 
+
+@media (min-width: 1201px) and (max-width: 1600px){
+  .aboutME-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .skills-grid {
+    padding: 0 2rem;
+    margin-left: 0;
+  }
+
+  .skills-Card{
+    width: 90%;
+    margin: 1rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .aboutMe-logo{
+    max-width: 400px;
+    max-height: 400px;
+  } 
+}
 /* Desktop (up to 1200px) */
 @media screen and (max-width: 1200px) {
   .aboutME-grid {
@@ -384,8 +411,18 @@
     margin-left: 0;
   }
 
-  .skills-Card {
+  .skills-Card{
+    width: 90%;
+    margin: 1rem;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
     width: 100%;
+  }
+  .aboutMe-logo{
+    max-width: 400px;
+    max-height: 400px;
   }
 }
 

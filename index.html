@@ -3,131 +3,202 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Welcome to BASIL-Tech, showcasing my skills in web development and more.">
+    <meta name="description" content="BASIL-Tech - Creative Web Developer Portfolio showcasing innovative projects and technical expertise">
     <link rel="icon" type="image/x-icon" href="./img/LOGOsite.png">
-    <!-- Preconnect for faster Google Fonts loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="index.css"> 
-    <title>BASIL-Tech</title>
-
-    <style>
-      
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>BASIL-Tech | Creative Web Developer</title>
   </head>
   
   <body>
-    <a id="Up"></a>
-    <video class="stars" src="./img/Star.mp4" playsinline  autoplay loop muted loading="lazy"></video>
-    <!-- Commented out login section -->
-    <!-- <section class="login-section">
-      <a id="login" class="login-href" href="./Login.html" target="_blank">Login</a>
-      <a class="signup-href" href="./Singup.html" target="_blank">Signup</a>
-    </section> -->
-
-    <header>
-      <h1>BASIL-Tech</h1>
-      <nav>
-         <!-- Support Button -->
-        <div class="support-button">
-          <a href="#social">Get in Touch</a>
-          <a href="#projects" >Projects</a>
-          <a href="https://www.paypal.com/paypalme/7bsa?country.x=SA&locale.x=ar_EG" target="_blank" rel="noopener noreferrer">Support Me on PayPal</a>
-        </div>
-      </nav>
-      <hr>
-  
     
-      <p>Welcome to my portfolio</p>      
+    <nav class="navbar">
+      
+      <div class="nav-content">
+        <div id="nav_links" class="nav_links">
+          <a href="#topPage" class="brandName" >BASIL</a>
+          <a href="#about_me" class="nav-a">About</a>
+          <a href="#skills" class="nav-a">Skills</a>
+          <a href="#projects" class="nav-a">Projects</a>
+          <a href="#contact" class="nav-a">Contact</a>
+        </div>
+      </div>
+     
+    </nav>
+    
+    <header>
+      <a id="topPage"></a>
+      <div class="Welcoming">
+        <div class="Welcoming-content">
+          
+          <h1 class="glitch" data-text="BASIL-Tech">BASIL-Tech</h1>
+          <p class="typewriter">Creative Web Developer</p>
+          <div class="cta-buttons">
+              <a href="#projects" class="button primary">View Projects</a>
+              <a href="#contact" class="button secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <figure class="logo-align">
-      <img class="logo" src="./img/LOGO.png" alt="BASIL-Tech Logo" loading="lazy">
-    </figure>
-
-
-    <!-- About Me Section -->
-    <section id="about-me" class="about-me">
-      <h4>About me:</h4>
-      <p>My name is BASIL. I'm 20 years old.<br>I study Computer and Information Technology at Jubail Industrial College.<br>A young person who loves to learn.</p>
-    </section>
-
-    <!-- Skills Section -->
-         <!-- Skills Section -->
-         <section class="skills">
-          <h2>Skills & Current progress</h2>
-          <ul>
-            <li>Good knowledge of HTML & CSS</li>
-            <li>Learning the fundamentals of JavaScript</li>
-            <li>Familiar with creating responsive layouts using CSS Grid & Flexbox</li>
-            <li>Basic understanding of Front-end Frameworks (Bootstrap)</li>
-            <!-- <li>Version Control (Git & GitHub)</li> -->
-        </ul>    
+    <main>
+      <section id="Name">
+        
+      </section>
+      <section id="about_me">
+        <div class="aboutMe-container">
+          <div>
+            <h1 class="section-title">ABOUT ME</h1>
+          </div>
+          <div class="aboutME-grid">
+           
+            <div id="aboutMe-logo">
+              <img src="./img/LOGO.png" alt="BASIL-Tech Logo" class="aboutMe-logo">
+            </div>
+            <div class="aboutME-content">
+              <p>Hi! I'm BASIL, a 20-year-old student pursuing Computer and Information Technology at Jubail Industrial College. I'm passionate about improving my skills, exploring new technologies, and learning something new every day to expand my technical expertise.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-<!-- Projects Section -->
+      <section class="gradient-bg " id="skills">
+        <h2 class="section-title skill-title" >Skills & Expertise</h2>
+        <div class="skills-grid">
+          <article class="skills-Card">
+            <div class="skills-content">
+              <div class="skill-icon">🎨</div>
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3</p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%"></div>
+                        </div>
+              
+            </div>
+          </article>
 
-<section class="Projects">
-  <a id="projects"></a>
-    <h2>Projects</h2>
-  <ul>
-    <li>
-      <a href="./Game/rock.html" target="_blank" rel="noopener noreferrer">
-        Simple Rock Paper Scissors Game wiht HTML,CSS and JavaScript.
-      </a>
-    </li>
+          <article class="skills-Card">
+            <div class="skills-content">
+              <div class="skill-icon">👩‍💻</div>
+                        <h3>Dynamic web pages (JavaScript)</h3>
+                        <p></p>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%"></div>
+                        </div>
+              
+            </div>
+          </article>
+          
 
-    <li>
-      <a href="./Story/Short_Story.html" target="_blank" rel="noopener noreferrer">
-        Simple Random Story Picker. Using HTML,CSS and JavaScript.
-      </a>
-    </li>
-
-    <li>
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        Simple Homepage for a Movies Site. Using HTML,CSS and Bootstrap. (still working on it)
-      </a>
-    </li>
-   
-    <!-- <li>Front-end Frameworks (Bootstrap)</li> -->
-    <!-- <li>Version Control (Git & GitHub)</li> -->
-</ul>    
-</section>
-  
-    <!-- Footer Section -->
+          <article class="skills-Card">
+            <div class="skills-content">
+              <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>CSS Grid, Flexbox, Bootstrap</p>
+                <div class="progress-bar">
+                  <div class="progress" style="width: 50%"></div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="skills-Card">
+            <div class="skills-content">
+              <div class="skill-icon">🐍</div>
+              <h3>Python</h3>
+              <p>Still studying</p>
+              <div class="progress-bar">
+                  <div class="progress" style="width: 15%"></div>
+              </div>
+              
+            </div>
      
-    <footer>
-      <a id="social"></a>
-      <div class="CC">
-        <a href="#Up" class="Up-button">Go Up</a>
-        <h4>Contact with me on ↴</h4>
-          <a href="https://www.instagram.com/_7wsz/" target="_blank" rel="noopener noreferrer">
-            <img class="img" src="./img/instagram_2111463.png" alt="Instagram logo" loading="lazy">
-          </a>
-          <a href="https://x.com/BinSami_IT" target="_blank" rel="noopener noreferrer">
-            <img class="img" src="./img/x.png" alt="Twitter X logo" loading="lazy">
-          </a> 
-          <a href="https://discord.gg/wf5P7dXBGr" target="_blank" rel="noopener noreferrer">
-            <img class="img" src="./img/discord.png"  alt="Discord logo" loading="lazy">
-          </a>
-          <a href="mailto:bassel71757@gmail.com" target="_blank" rel="noopener noreferrer">
-            <img class="img" src="./img/Mail.png" alt="Email icon" loading="lazy">
-          </a>
-          <a href="https://github.com/GreatBSA" target="_blank" rel="noopener noreferrer">
-            <img class="img" src="./img/github.png" alt="github icon" loading="lazy">
-          </a>
-          <p>&copy;2024 BASIL-Tech. All rights reserved |
-            Dev By BASIL Tech
-          </p>
-         
-      </div>
-    </footer>
+          
 
-    <!-- External JS File -->
-    <!-- <script src='signup-login.js'></script> -->
+          
+        </div>
+              
+    </section>
+      <section id="projects">
+          <h2 class="section-title" >Featured Projects</h2>
+          <div class="project-grid">
+            <article class="project-Card">
+              <div class="project-content">
+                <h2>Project 1 </h2>
+                <p>Simple Rock Paper Scissors Game wiht HTML,CSS and JavaScript.</p>
+                <a class="button" href="./Game/rock.html" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+            <article class="project-Card">
+              <div class="project-content">
+                <h2>Project 2 </h2>
+                <p>Simple Random Story Picker. Using HTML,CSS and JavaScript.</p>
+                <a class="button" href="./Story/Short_Story.html" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+
+            <article class="project-Card">
+              <div class="project-content">
+                <h2>Project 3 </h2>
+                <p>Simple Homepage for a movies Site. Using HTML,CSS and Bootstrap. (still working on it)</p>
+                <a class="button" href="./WATCH.NET/index.html" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+            <article class="project-Card">
+              <div class="project-content">
+                <h2>Project 4 </h2>
+                <p>Simple Homepage for a Food Site. Using HTML,CSS and Bootstrap.</p>
+                <a class="button" href="./Online shop/index.html" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+            
+
+            
+          </div>
+                
+      </section>
+      
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+            <a href="#top" class="up-button" aria-label="Return to top of page">Go Up</a>
+            <h2>Connect with me on ↴</h2>
+            <div class="social-grid">
+                <a href="https://www.instagram.com/_7wsz/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-item">
+                    <img src="./img/instagram_2111463.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://x.com/BinSami_IT" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-item">
+                    <img src="./img/x.png" alt="X (Twitter)" class="social-icon">
+                </a>
+                <a href="https://discord.gg/wf5P7dXBGr" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-item">
+                    <img src="./img/discord.png" alt="Discord" class="social-icon">
+                </a>
+                <a href="mailto:bassel71757@gmail.com" 
+                   class="social-item">
+                    <img src="./img/Mail.png" alt="Email" class="social-icon">
+                </a>
+                <a href="https://github.com/GreatBSA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="social-item">
+                    <img src="./img/github.png" alt="GitHub" class="social-icon">
+                </a>
+                <a id="contact"></a>
+            </div>
+            <p class="copyright">&copy; 2024 BASIL-Tech. All rights reserved | Dev By BASIL Tech</p>
+        </div>
+    </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,153 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    scrollbar-color: auto;
+    width: .3em;
+    background-color: #0088ff;    
+    border-radius: 2px;
+  } 
+body::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 0 20px aliceblue;
+  }
+body{
+    background-color:#0b1116;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    font-weight: bolder;
+    border-bottom: 5px solid #0088ff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#0b1116  !important; 
+}
+.navbar-nav{
+    font-size: 1.3rem;    
+}
+
+.nav-link{
+    color: #0088ff !important;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    border: 1px solid;
+    padding: 5px ;
+    color: #0088ff !important;
+    border-radius: 5px;
+}
+
+.top-text{
+  display: block;
+  padding: 5px;
+  background-color: #0088ff;
+  width: fit-content;
+  margin-top: 1rem;
+  color: #0b1116;
+  border-radius: 5px;
+  border-top-left-radius:0 ;
+  border-bottom-left-radius:0 ;
+  font-size: 1.7rem;
+}
+
+.Wecloming-text{
+  display: block;
+  padding: 5px;
+  margin-left: 50rem;
+  width: fit-content;
+  margin-top: 4rem;
+  color: #0088ff;
+  font-size: 2rem;
+  border: #0088ff 1px solid;
+  transition: .2s;
+}
+.Wecloming-text:hover{
+  color: whitesmoke;
+  padding: 15px;
+  border: #0088ff solid;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.card{
+  margin:0 1.5rem ;
+  transition: 0.3s;
+}
+
+.card:hover{
+  scale: 1.03;
+  box-shadow: 0 0 10px #0088ff;
+ 
+}
+.card-img-top{
+  transition: 0.3s;
+}
+.card-img-top:hover{
+  opacity: 0.8;
+}
+
+#movies-cards-top{
+  display: grid; 
+  gap: 1rem;
+  margin:  auto 1rem;
+  grid-template-columns: 18rem 18rem  18rem  18rem 18rem 18rem ;
+  border: #0088ff 1px solid;
+  padding: 15px;
+}
+  
+
+
+.Recently-text{
+  display: block;
+  padding: 5px;
+  background-color: #0088ff;
+  width: fit-content;
+  margin-top: 2rem;
+  color: #0b1116;
+  border-radius: 5px;
+  border-top-left-radius:0 ;
+  border-bottom-left-radius:0 ;
+  font-size: 1.7rem;
+}
+
+#movies-cards-Recently{
+  display: grid;
+  gap: 1rem;
+  margin:  auto 1rem;
+  grid-template-columns:  18rem 18rem  18rem  18rem 18rem 18rem    ;
+  border: #0088ff 1px solid;
+  padding: 15px;
+}
+
+.card{
+  background-color: rgb(0, 29, 53);
+  border: #0088ff 1px solid;
+}
+
+.card-body{
+  color: whitesmoke;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 12px;
+  color: white;
+  min-height: 50px;
+  padding-top: 15px;
+ 
+  border-top: 3px solid #0088ff;
+}

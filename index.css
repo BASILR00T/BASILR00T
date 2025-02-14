@@ -360,3 +360,108 @@
     margin-top: 2rem;
   }
   /*--------------*/
+
+
+/* Media Queries */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .nav_links {
+        padding: 0 1rem;
+    }
+
+    .Welcoming-content {
+        padding: 0 1rem;
+    }
+
+    .aboutME-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .skills-grid {
+        padding: 0 5rem;
+        margin-left: 5rem;
+    }
+
+    .project-grid {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+    .nav_links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-a {
+        padding: 0.5rem 0;
+    }
+
+    .Welcoming {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .glitch {
+        font-size: 3rem;
+    }
+
+    .typewriter {
+        font-size: 1.2rem;
+    }
+
+    .aboutME-content {
+        padding: 1rem;
+    }
+
+    .skills-grid {
+        padding: 0 2rem;
+        margin-left: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding: 1rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .nav_links {
+        padding: 0 0.5rem;
+    }
+
+    .glitch {
+        font-size: 2rem;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+    }
+
+    .aboutME-grid {
+        gap: 1rem;
+    }
+
+    .skills-grid {
+        padding: 0 1rem;
+        margin-left: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 0.5rem;
+    }
+
+    .footer {
+        padding: 1rem 0;
+    }
+}

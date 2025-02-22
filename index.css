@@ -133,50 +133,47 @@
     box-shadow: var(--shadow);
   }
 
-  @keyframes glitch {
-    0% {
-      transform: translate(0);
-      color: var(--dark);
-    }
 
-    20% {
-      border-left: solid 1px #0088ff;
-      color: var(--dark);
-    }
-
-    40% {
-      color: var(--dark);
-    }
-
-    60% {
-      color: var(--primary);
-    }
-
-    100% {
-      border-right: solid 1px #0088ff;
-      color: var(--primary);
-    }
-   
-   
-  }
-  
-  .glitch {
-    font-size: 4rem;
+  .typing {
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    position: relative;
-    animation: glitch 1s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    color:var(--primary);
   }
-  
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
   
   .typewriter {
-    color: var(--primary);
-    position: relative;
+    display: flex;
+    justify-content: center;
     padding: 0.5rem 0;
     font-size: 1.5rem;
     margin-top: -2rem;
+    margin-left: 2rem;
+    width: fit-content;
+    white-space: nowrap;
   }
 
+  .typewriter p{
+    border-right: 1px solid #0088ff; /* Cursor effect */
+    overflow: hidden;
+    animation: typewriter 3s steps(22) infinite, blink 1s step-end infinite;
+  }
+
+
+  @keyframes typewriter {
+    0% { width: 0; color: var(--primary); } /* Start typing */
+    80% { width: 100%;  color: var(--light);} /* Finish typing at 80% of animation duration */
+    100% { width: 100%; color: var(--dark);} /* Hold the final state for 20% (pause) */
+   
+  }
 
   .aboutMe-container{
     max-width: 1200px;

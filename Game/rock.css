@@ -1,3 +1,16 @@
+:root {
+    --primary: #0088ff;
+    --secondary: #73AD21;
+    --dark: #0b1116;
+    --light: #ffffff;
+    --gray: #9ca3af;
+    --gradient: linear-gradient(135deg, var(--primary), #00f2fe);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    --bluegradient: linear-gradient(rgba(11, 17, 22, 0.9), rgba(11, 17, 22, 0.9)),
+    var(--gradient);
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,15 +30,13 @@ h2 {
 
 .gameParnt {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 50vh;
     padding: 1rem;
-    border: 1px solid #00bcd4;
     border-radius: 15px;
-    background: linear-gradient(145deg, #1f1f1f, #232323);
-    box-shadow: 10px 10px 20px #181818, -10px -10px 20px #292929;
-    width: 400px;
     max-width: 80%;
     margin: 10px auto;
 }
@@ -46,7 +57,6 @@ button:hover {
     box-shadow: 5px 5px 25px rgba(0, 188, 212, 0.3), -5px -5px 25px rgba(0, 188, 212, 0.5);
 }
 
-
 .rockbtn img{
     width: 140px;
 }
@@ -62,7 +72,7 @@ button:hover {
     padding: 10px;
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+  
     border: 1px solid #ffeb3b;
     color: #ffeb3b;
     transition: background 0.5s;
@@ -102,19 +112,76 @@ button:hover {
 }
 
 /* Footer Styles */
-footer {
+.footer{
+    background-color:#1c1c1c;
+    padding: 1rem 0;
+    margin-top: auto;
+    border-top: 1px solid #ffeb3b;
+  }
+
+
+  .social-grid{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .footer-content {
     text-align: center;
-    margin-top: 1rem; /* Pushes footer to the bottom */
-    font-size: 12px;
-    color: white;
-    padding: 10px 0; /* Optional padding for aesthetic spacing */
-    border-top: 3px solid gold;
-    transition: background-color 0.5s; /* Added transition for hover effects */
-}
-footer p{
-  padding: 5px auto;  
-  line-height: 1.4;
-}
+  }
+
+  .footer h2 {
+    color: #00bcd4;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px #ffeb3b solid;
+    background: rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: var(--transition);
+  }
+
+  .social-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .social-item:hover .social-icon {
+    filter: grayscale(0%);
+  }
+
+
+  .up-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--gradient);
+    color: var(--light);
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+  }
+
+  .copyright {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
 
 /* Anchor Link Styles */
 a {
@@ -122,18 +189,6 @@ a {
 }
 
 /* Social Image Styles */
-.img {
-    border-radius: 10px;
-    border: 2px solid #73AD21;
-    max-height: 30px;
-    filter: grayscale(100%);
-    transition: filter 0.5s, transform 0.5s; /* Improved transition */
-}
-
-.img:hover {
-    filter: grayscale(0%);
-    transform: scale(1.1);
-}
 
  /* Media Query for Tablets and Mobiles */
  @media (max-width: 768px) {
@@ -168,29 +223,13 @@ a {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
-    footer {
-        margin-top: -1rem; /* Pushes footer to the bottom */
-    }
+    .footer{
+        background-color:#1c1c1c;
+        padding: 2rem 0;
+        margin-top: 5rem;
+        border-top: 1px solid #ffeb3b;
+      }
+    
+    
 }
 
-
-@media (max-width: 400px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-    h4 {
-        font-size: 1rem;
-    }
-    button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-    button img{
-        width: 75%;
-    }
-
-
-    footer {
-        margin-top: -1rem; /* Pushes footer to the bottom */
-    }
-}

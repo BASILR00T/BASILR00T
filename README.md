@@ -1,6 +1,6 @@
 # BASIL-Tech Portfolio Website
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green)]([https://your-portfolio-url.com](https://greatbsa.github.io/BASIL-TECH/)) 
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-green)]([https://greatbsa.github.io/BASIL-TECH]) 
 [![GitHub](https://img.shields.io/badge/Source-Code-blue)](https://github.com/GreatBSA/BASIL-TECH)
 
 A modern developer portfolio showcasing technical skills, projects, and professional identity. Built with semantic HTML5, CSS3, and vanilla JavaScript.

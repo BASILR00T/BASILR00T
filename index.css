@@ -286,6 +286,23 @@ padding: .5rem ;
   border-radius: 15px;
     
 }
+.project-view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  width: 100%;
+  border-radius: 15px;
+  border: var(--primary) 1px solid;
+  filter: blur(2px);
+  transition: var(--transition);
+}
+.project-view:hover{
+  transform: scale(1.03);
+  filter: blur(0px);
+  box-shadow: 1px 1px 10px var(--primary);
+
+}
 .footer{
   background-color: rgba(11, 17, 22, 0.9);
   padding: 3rem 0;

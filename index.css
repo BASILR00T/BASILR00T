@@ -285,20 +285,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 15px;
     
 }
-.project-content p{
-  padding-bottom:  1.5rem ;
-}
-.project-view{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 260px;
-  width: 100%;
-  border-radius: 15px;
-  border: var(--primary) 1px solid;
-  filter: blur(2px);
-  transition: var(--transition);
-}
+
+
 .project-view:hover{
   transform: scale(1.02);
   filter: blur(0px);

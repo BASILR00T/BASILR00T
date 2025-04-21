@@ -202,8 +202,13 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+  header{
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
   h1.ml3 {
-      font-size: 2rem;
+      font-size: 1.7rem;
   }
 
   #Result {
@@ -229,8 +234,13 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+  
+  header{
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
   h1.ml3 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
   }
 
   #Result {

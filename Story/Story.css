@@ -22,7 +22,7 @@ body {
 header {
   text-align: center;
   padding-bottom: 10px;
-  padding-top:5px;
+  padding-top:10px;
   background: linear-gradient(145deg, #2E8B57 0%, #1f5c3d 100%);
   border-bottom: 3px solid #ffd700;
   box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);

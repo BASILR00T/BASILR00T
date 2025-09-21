@@ -546,6 +546,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .nav_links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr)); /* Example for responsive columns */
+    gap: 3px; /* Spacing between menu items */
+}
+
+    .nav_links {
         flex-direction: row;
         padding: 0.5rem;
     }
@@ -581,9 +587,9 @@ body::-webkit-scrollbar-thumb {
         margin-left: 0;
     }
     .Certifications-img {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
   }
 
     .Certifications-Card {

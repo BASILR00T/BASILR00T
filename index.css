@@ -260,42 +260,6 @@ body::-webkit-scrollbar-thumb {
     margin: 1rem 0;
 }
 
-/*------------Certifications------------------------*/
-.Certifications-img {
-    width: 350px;
-    height: auto;
-    border-radius: 15px;
-}
-
-.Certifications-Card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
-    /* Removed fixed width to let the grid/flex container manage sizing */
-}
-
-.Certifications-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.Certifications-Card:hover {
-    transform: translateY(-5px);
-}
-
-.Certifications-grid {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap onto the next line */
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 1rem 0;
-    padding: 0 1rem; /* Add some padding for smaller screens */
-}
-/*Certifications----------END*/
-
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -412,17 +376,6 @@ body::-webkit-scrollbar-thumb {
         margin: 1rem;
     }
 
-    /*Certifications*/
-    .Certifications-grid {
-        padding: 0 2rem;
-        margin-left: 0;
-    }
-
-    .Certifications-Card {
-        width: 90%;
-        margin: 1rem;
-    }
-    /*END of Certifications section*/
     .project-grid {
         grid-template-columns: 1fr;
         padding: 1.5rem;
@@ -452,22 +405,7 @@ body::-webkit-scrollbar-thumb {
         width: 90%;
         margin: 1rem;
     }
-    /*Certifications*/
-    .Certifications-grid {
-        padding: 0 2rem;
-        margin-left: 0;
-    }
-    .Certifications-img {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
-  }
-
-    .Certifications-Card {
-        width: 90%;
-        margin: 1rem;
-    }
-    /*END of Certifications section*/
+   
 
     .project-grid {
         grid-template-columns: 1fr;
@@ -521,22 +459,7 @@ body::-webkit-scrollbar-thumb {
         max-width: 400px;
         max-height: 400px;
     }
-        /*Certifications*/
-    .Certifications-grid {
-        padding: 0 10rem;
-        margin-left: 0;
-    }
-    .Certifications-img {
-      width: 350px;
-      height: auto;
-      border-radius: 15px;
-  }
-
-    .Certifications-Card {
-        width: 90%;
-        margin: 1rem;
-    }
-    /*END of Certifications section*/
+       
 }
 
 /* Mobile (up to 480px) */
@@ -581,22 +504,7 @@ body::-webkit-scrollbar-thumb {
         width: 90%;
         margin: 1rem;
     }
-        /*Certifications*/
-    .Certifications-grid {
-        padding: 1rem;
-        margin-left: 0;
-    }
-    .Certifications-img {
-        width: 200px;
-        height: auto;
-        border-radius: 15px;
-  }
-
-    .Certifications-Card {
-        width: 90%;
-        margin: 1rem;
-    }
-    /*END of Certifications section*/
+       
 
     .project-grid {
         padding: 1rem;
@@ -628,3 +536,4 @@ body::-webkit-scrollbar-thumb {
         margin-left: 4rem;
     }
 }
+

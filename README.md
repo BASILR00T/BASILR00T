@@ -1,7 +1,7 @@
 # BASILR00T
 
-[![Portfolio](https://img.shields.io/badge/View-Live_Portfolio-green)](https://greatbsa.github.io/BASIL-TECH)
-[![Source Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/GreatBSA/BASIL-TECH)
+[![Portfolio](https://img.shields.io/badge/View-Live_Portfolio-green)](https://BASILR00T.github.io/BASILR00T)
+[![Source Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/BASILR00T/BASILR00T)
 
 Welcome to the source code repository for my personal portfolio website.
 

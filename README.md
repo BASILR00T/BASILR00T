@@ -1,4 +1,4 @@
-# BASILR00T Portfolio
+# BASILR00T
 
 [![Portfolio](https://img.shields.io/badge/View-Live_Portfolio-green)](https://greatbsa.github.io/BASIL-TECH)
 [![Source Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/GreatBSA/BASIL-TECH)

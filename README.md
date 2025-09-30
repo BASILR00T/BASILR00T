@@ -1,4 +1,4 @@
-# BASIL-Tech Portfolio Website
+# BASILR00T Portfolio Website
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-green)](https://greatbsa.github.io/BASIL-TECH)
 [![GitHub](https://img.shields.io/badge/Source-Code-blue)](https://github.com/GreatBSA/BASIL-TECH)

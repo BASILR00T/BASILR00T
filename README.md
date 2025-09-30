@@ -49,7 +49,7 @@ A modern developer portfolio showcasing technical skills, projects, and professi
 
 ## License
 
-© 2024 BASIL-Tech. All rights reserved.  
+© 2024 BASILR00T. All rights reserved.  
 
 ---
 

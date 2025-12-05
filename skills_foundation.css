@@ -1,0 +1,47 @@
+/* Skills Foundation */
+.skills-foundation {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.skills-foundation:hover {
+    border-color: rgba(0, 136, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.skills-foundation h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.skills-foundation p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+}
+
+.skills-foundation .highlight {
+    color: var(--text-main);
+    font-weight: 600;
+    background: rgba(0, 136, 255, 0.1);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    margin: 0 0.2em;
+}
+
+.skills-foundation .foundation-sub {
+    font-style: italic;
+    color: var(--text-muted);
+    border-top: 1px solid var(--card-border);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
